@@ -38,13 +38,13 @@ def total_even_pairs(src)
   # the number was even. Review the operator documentation if you've forgotten
   # this!
   
-  total = []
-  i = 0
-  while i < src.length do
-    if (src[i][0] % 2 == 0) && (src[i][1] % 2 == 0)
-      total += (src[i][0] + src[i][1])
+  total = 0
+  row_index = 0
+  while row_index < src.count do
+    if src[row_index][0] % 2 == 0 && src[row_index][1] % 2 == 0
+      total += (src[row_index][0] + src[row_index][1])
     end
-    i += 1
+    row_index += 1
   end
 total
 end
