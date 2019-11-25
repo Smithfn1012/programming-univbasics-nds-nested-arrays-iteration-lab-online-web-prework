@@ -24,10 +24,10 @@ def find_greater_pair(src)
   while i < src.length do
   new_array.push(src[i].max)
   i += 1
-end
+  end
 new_array
 end
-end
+
 
 def total_even_pairs(src)
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
